@@ -1,0 +1,21 @@
+.popup__overlay {
+  background-color: rgba(0, 0, 0, 0.575);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+}
+.popup {
+  position: absolute;
+  left: 45%;
+  top: 25%;
+  z-index: 3;
+}
+
+.popup_show {
+  visibility: visible;
+  opacity: 1;
+}

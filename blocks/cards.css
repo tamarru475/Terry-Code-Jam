@@ -37,3 +37,18 @@
   top: -300px;
   z-index: 1;
 }
+
+@media screen and (max-width: 425px) {
+  .cards__container {
+    flex-direction: column;
+  }
+  .cards__title {
+    font-size: 75px;
+  }
+  .cards__container:before {
+    right: 0;
+    left: 0;
+    width: 300px;
+    height: 500px;
+  }
+}

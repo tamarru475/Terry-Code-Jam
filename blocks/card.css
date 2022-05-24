@@ -50,3 +50,18 @@
   background-color: #0883ff;
   color: #ffffff;
 }
+
+@media screen and (max-width: 920px) {
+  .card__image {
+    width: 75%;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card__title {
+    font-size: 30px;
+  }
+  .card__image {
+    height: 200px;
+  }
+}

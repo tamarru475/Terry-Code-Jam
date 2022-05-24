@@ -37,11 +37,22 @@
   top: -300px;
   z-index: 1;
 }
-
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 920px) {
   .cards__container {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
+  .cards__title {
+    margin-bottom: 75px;
+  }
+
+  .cards__container:before {
+    right: 0;
+    left: 0;
+    width: 500px;
+    height: 450px;
+  }
+}
+@media screen and (max-width: 920px) {
   .cards__title {
     font-size: 75px;
   }

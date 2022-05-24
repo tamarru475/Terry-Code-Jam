@@ -12,15 +12,30 @@
     <main class="main">
       <section class="cards">
         <h2 class="cards__title">Hobbies</h2>
-        <div class="popup__overlay">
+        <div class="popup__overlay sci-fi close_sifi">
           <div class="popup">
-            <button class="popup__close-button"></button>
-            <h3 class="popup__title">Hello World</h3>
+            <button class="popup__close-button" id="close_sifi"></button>
+            <h3 class="popup__title">SCI-FI</h3>
             <iframe
-              class="popup__video"
               width="560"
               height="315"
-              src=""
+              src="https://www.youtube.com/embed/TcxOp0jnSVQ?controls=0&autoplay=1&mute=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <p class="popup__caption"></p>
+          </div>
+        </div>
+        <div class="popup__overlay dragon-ball close_dragonball">
+          <div class="popup">
+            <button class="popup__close-button" id="close_dragonball"></button>
+            <h3 class="popup__title">something else</h3>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/aLX6I-e5nrk?controls=0&autoplay=1&mute=1"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

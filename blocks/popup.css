@@ -7,15 +7,29 @@
   z-index: 2;
   visibility: hidden;
   opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
 }
 .popup {
-  position: absolute;
-  left: 45%;
-  top: 25%;
   z-index: 3;
+  background-color: rgba(11, 131, 235, 0.418);
+  padding: 5%;
 }
-
+.popup__title {
+}
 .popup_show {
   visibility: visible;
   opacity: 1;
+}
+.popup__close-button {
+  background-image: url(../images/Close\ Icon.svg);
+
+  width: 40px;
+  height: 40px;
+  background-color: unset;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
 }

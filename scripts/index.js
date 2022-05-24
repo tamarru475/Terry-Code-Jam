@@ -1,21 +1,20 @@
 import { Card, confCard } from "./Card.js";
 import { closePopup } from "./utils.js";
-import { popup } from "./Card.js";
 
 // Creating cards
 const cardData = [
   {
-    id: 1,
+    id: "sci-fi",
     title: "Sci-Fi",
     image: "../images/Terry20items.png",
   },
   {
-    id: 2,
+    id: "dragon-ball",
     title: "Dragon Ball Z",
     image: "../images/Terrysmile.png",
   },
   {
-    id: 3,
+    id: "dj",
     title: " DJ",
     image: "../images/TerryBench.png",
   },
@@ -50,8 +49,12 @@ const popupsData = [
 ];
 
 //Creating popups
-const popupCloseButton = document.querySelector(".popup__close-button");
-popupCloseButton.addEventListener("click", () => {
-  closePopup(popup);
+
+const closeButtons = [...document.querySelectorAll(".popup__close-button")];
+closeButtons.forEach((button) => {
+  const popup = document.querySelector(`.${button.id}`);
+  button.addEventListener("click", () => {
+    closePopup(popup);
+  });
 });
 //Creating popups

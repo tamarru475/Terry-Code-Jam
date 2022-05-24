@@ -7,7 +7,7 @@ const confCard = {
   cardDescriptionClass: ".card__description",
   cardButton: ".card__button",
 };
-export const popup = document.querySelector(".popup__overlay");
+// export const popup = document.querySelector(".popup__overlay");
 class Card {
   constructor(data, template) {
     this._title = data.title;
@@ -18,17 +18,19 @@ class Card {
       .querySelector(this._template)
       .content.querySelector(confCard.cardClass)
       .cloneNode(true);
+    this._cardButton = this._card.querySelector(confCard.cardButton);
   }
   _openPopup() {
+    const popup = document.querySelector(`.${this._cardButton.id}`);
     openPopup(popup);
   }
   generateCard() {
     const cardTitle = this._card.querySelector(confCard.cardTitleClass);
     const cardImage = this._card.querySelector(confCard.cardImageClass);
-    const cardButton = this._card.querySelector(confCard.cardButton);
-    cardButton.addEventListener("click", () => {
+    this._cardButton.addEventListener("click", () => {
       this._openPopup();
     });
+    this._cardButton.id = this._id;
     cardTitle.textContent = this._title;
     cardImage.src = this._image;
     return this._card;

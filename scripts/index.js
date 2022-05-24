@@ -1,19 +1,16 @@
 import { Card, confCard } from "./Card.js";
 const cardData = [
   {
-    title: "Hello World !",
+    title: "Sci-Fi",
     image: "../images/Terry20items.png",
-    description: "Description",
   },
   {
-    title: "Hello World !",
-    image: "../images/Terry20items.png",
-    description: "Description",
+    title: "Dragon Ball Z",
+    image: "../images/Terrysmile.png",
   },
   {
-    title: "Hello World !",
-    image: "../images/Terry20items.png",
-    description: "Description",
+    title: " DJ",
+    image: "../images/TerryBench.png",
   },
 ];
 const cardSection = document.querySelector(".cards__container");

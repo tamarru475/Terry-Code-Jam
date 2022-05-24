@@ -1,18 +1,28 @@
 .cards {
-  max-width: 1600px;
+  max-width: 1280px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 250px auto;
 }
+.cards__title {
+  font-family: "Koulen", cursive;
+  font-size: 100px;
+  letter-spacing: 5px;
+  border-bottom: #0883ff 5px double;
+  z-index: 2;
+  margin-bottom: 100px;
+  color: #0883ff;
+}
 .cards__container {
   display: flex;
-  border: 1px solid black;
   padding: 5%;
   column-gap: 15px;
   row-gap: 15px;
-  /* background-color: #0883ff; */
+  background-color: #0883ff;
+  border: 5px solid black;
+  border-radius: 5px;
   position: relative;
 }
 .cards__container:before {

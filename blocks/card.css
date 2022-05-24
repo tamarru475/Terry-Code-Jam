@@ -1,20 +1,52 @@
 .card {
-  border: 1px solid black;
-  max-width: 350px;
+  width: 100%;
   text-align: center;
   justify-self: center;
-
+  background-color: #ffffff;
   padding: 1%;
   border-radius: 10px;
+  transition: 0.5s;
 }
-.card__image {
-  max-width: 100%;
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px #000000;
 }
 .card__title {
+  margin: 0;
   font-family: "Koulen", cursive;
   font-size: 40px;
+  color: #0883ff;
+  letter-spacing: 2px;
 }
+.card__image {
+  width: 100%;
+  height: 300px;
+  backdrop-filter: blur(
+    5px
+  ); /* This thing make our images for some reason better*/
+}
+
 .card__description {
+  margin: 0;
   font-family: "Ubuntu", sans-serif;
   font-size: 20px;
+}
+
+.card__button {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  padding: 5%;
+  width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  color: #000000;
+  background-color: #ffffff;
+  transition: 0.5s;
+  position: relative;
+}
+
+.card__button:hover {
+  background-color: #0883ff;
+  color: #ffffff;
 }

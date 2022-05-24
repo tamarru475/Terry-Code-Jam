@@ -7,7 +7,7 @@ const confCard = {
   cardDescriptionClass: ".card__description",
   cardButton: ".card__button",
 };
-const popup = document.querySelector(".popup__overlay");
+export const popup = document.querySelector(".popup__overlay");
 class Card {
   constructor(data, template) {
     this._title = data.title;

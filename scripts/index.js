@@ -1,4 +1,6 @@
 import { Card, confCard } from "./Card.js";
+import { closePopup } from "./utils.js";
+import { popup } from "./Card.js";
 
 // Creating cards
 const cardData = [
@@ -46,5 +48,10 @@ const popupsData = [
     caption: "Hello World",
   },
 ];
+
 //Creating popups
+const popupCloseButton = document.querySelector(".popup__close-button");
+popupCloseButton.addEventListener("click", () => {
+  closePopup(popup);
+});
 //Creating popups

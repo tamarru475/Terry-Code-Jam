@@ -1,0 +1,29 @@
+.cards {
+  max-width: 1600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 250px auto;
+}
+.cards__container {
+  display: flex;
+  border: 1px solid black;
+  padding: 5%;
+  column-gap: 15px;
+  row-gap: 15px;
+  /* background-color: #0883ff; */
+  position: relative;
+}
+.cards__container:before {
+  content: "";
+  background-image: url(../images/Terrychill.png);
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: -300px;
+  z-index: 1;
+}

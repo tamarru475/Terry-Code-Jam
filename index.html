@@ -10,7 +10,60 @@
   <body>
     <header class="header"></header>
     <main class="main"></main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__content">
+        <form class="footer__form form">
+          <h3 class="form__heading">Let's keep in touch</h3>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form__name"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form__email"
+            placeholder="Email adress"
+            required
+          />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Write your message here..."
+            class="form__message"
+            required
+          ></textarea>
+          <button class="form__reset">Reset</button>
+          <button class="form__submit">Submit</button>
+        </form>
+        <div class="footer__bottom-container">
+          <div class="form__social-media social-media">
+            <a href="#" class="social-media__link"
+              ><img src="#" alt="twitter icon" class="social-media__icon"
+            /></a>
+            <a href="#" class="social-media__link"
+              ><img src="#" alt="linkedin icon" class="social-media__icon"
+            /></a>
+            <a href="#" class="social-media__link"
+              ><img src="#" alt="github icon" class="social-media__icon"
+            /></a>
+          </div>
+          <p class="footer__copyright">
+            &copy;2022 Practicum Spring Code Jam - Team Kangaroo: Tamar Rubin,
+            Ozan Sevkin, Amit Bar-Gil
+          </p>
+        </div>
+        <img
+          src="./images/Terry-office.png"
+          alt="Terry working on his laptop"
+          class="footer__image"
+        />
+      </div>
+    </footer>
     <script type="module" src="./scripts/index.js"></script>
   </body>
 </html>

@@ -27,29 +27,7 @@ cardData.forEach((card) => {
 });
 //Creating cards
 
-const popupsData = [
-  {
-    id: 1,
-    title: "Hello World1",
-    video: "",
-    caption: "Hello World",
-  },
-  {
-    id: 2,
-    title: "Hello World2",
-    video: "",
-    caption: "Hello World",
-  },
-  {
-    id: 3,
-    title: "Hello World3",
-    video: "",
-    caption: "Hello World",
-  },
-];
-
-//Creating popups
-
+//Close popups on a specific id
 const closeButtons = [...document.querySelectorAll(".popup__close-button")];
 closeButtons.forEach((button) => {
   const popup = document.querySelector(`.${button.id}`);
@@ -57,4 +35,4 @@ closeButtons.forEach((button) => {
     closePopup(popup);
   });
 });
-//Creating popups
+//Close popups on a specific id

@@ -1,4 +1,4 @@
-import { openPopup, closePopup } from "./utils.js";
+import { openPopup } from "./utils.js";
 const confCard = {
   cardTemplate: "#card-template",
   cardClass: ".card",
@@ -7,7 +7,6 @@ const confCard = {
   cardDescriptionClass: ".card__description",
   cardButton: ".card__button",
 };
-// export const popup = document.querySelector(".popup__overlay");
 class Card {
   constructor(data, template) {
     this._title = data.title;

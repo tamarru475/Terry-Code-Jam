@@ -1,0 +1,52 @@
+.popup__nav {
+  max-width: 100px;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: 5;
+  box-sizing: border-box;
+  border-bottom: 1px solid #000000;
+}
+
+.popup_fadein {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+}
+
+.popup_fadeout {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.8s linear, opacity 0.8s linear;
+}
+
+.popup__nav-list {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.popup__nav-box {
+  box-sizing: border-box;
+  border-bottom: 1px solid #000000;
+  opacity: 0.5;
+}
+
+.popup__nav-link {
+  margin: 0;
+  color: #000000;
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.popup__nav-link:hover {
+  color: #0882ff;
+}

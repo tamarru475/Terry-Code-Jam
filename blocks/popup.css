@@ -18,6 +18,9 @@
   padding: 5%;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  max-width: calc(560px + (51px * 2));
 }
 .popup__title {
   font-family: "Koulen", cursive;
@@ -39,4 +42,28 @@
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
+}
+.popup__caption {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.popup__frame {
+  border-radius: 10px;
+  align-self: center;
+}
+@media screen and (max-width: 650px) {
+  .popup__frame {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .popup {
+    padding: 2.5%;
+  }
+  .popup__caption {
+    font-size: 16px;
+  }
 }

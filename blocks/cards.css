@@ -1,0 +1,65 @@
+.cards {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.cards__title {
+  font-family: "Koulen", cursive;
+  font-size: 100px;
+  letter-spacing: 5px;
+  border-bottom: #0883ff 5px double;
+  z-index: 2;
+  margin-bottom: 100px;
+  color: #0883ff;
+}
+.cards__container {
+  display: flex;
+  padding: 5%;
+  column-gap: 15px;
+  row-gap: 15px;
+  background-color: #0883ff;
+  border: 5px solid black;
+  border-radius: 5px;
+  position: relative;
+}
+.cards__container:before {
+  content: "";
+  background-image: url(../images/Terrychill.png);
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: -300px;
+  z-index: 1;
+}
+@media screen and (max-width: 920px) {
+  .cards__container {
+    flex-wrap: wrap;
+  }
+  .cards__title {
+    margin-bottom: 75px;
+  }
+
+  .cards__container:before {
+    right: 0;
+    left: 0;
+    width: 500px;
+    height: 450px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .cards__title {
+    font-size: 75px;
+  }
+  .cards__container:before {
+    right: 0;
+    left: 0;
+    width: 300px;
+    height: 500px;
+  }
+}

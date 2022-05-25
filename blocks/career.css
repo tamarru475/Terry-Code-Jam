@@ -1,0 +1,120 @@
+.career {
+  max-width: 100%;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 70px;
+}
+
+.career__heading {
+  margin: 0;
+  max-width: 800px;
+  margin: 0;
+  font-family: "Koulen", cursive, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 62px;
+  line-height: 80px;
+  color: #161616;
+}
+
+.career__companies {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.career__companies-google {
+  max-width: 80px;
+  width: 100%;
+  transition: rotation 0.3s ease-in-out;
+}
+
+.career__companies-google:hover {
+  animation: rotation 1.3s ease-in-out infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+}
+
+.career__companies-spotify {
+  max-width: 80px;
+  transition: pulsate 0.3s ease-in-out;
+}
+
+.career__companies-spotify:hover {
+  animation: pulsate 1.3s ease-in-out infinite;
+}
+
+.career__companies-apple {
+  max-width: 80px;
+  width: 80px;
+  height: 80px;
+  background: #ffffff url("../images/apple1.png") no-repeat center/cover;
+  transition: background 0.3s ease-in-out;
+}
+
+.career__companies-apple:hover {
+  background: #ffffff url("../images/apple-color3.png") no-repeat center/cover;
+  max-width: 100px;
+  width: 100%;
+  height: 110px;
+}
+
+.career__companies-yandex {
+  max-width: 150px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.career__companies-yandex:hover {
+  box-shadow: 5px 6px 7px red;
+}
+
+@media screen and (max-width: 960px) {
+  .career__companies {
+    padding-left: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .career__heading {
+    font-size: 32px;
+    line-height: 50px;
+    padding-left: 30px;
+  }
+  .career__companies {
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 30px;
+  }
+}

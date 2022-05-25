@@ -6,10 +6,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Terrence Shlomo Tegegne</title>
     <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="stylesheet" href="./images/favicon.ico" />
   </head>
-  <body>
-    <header class="header"></header>
-    <main class="main"></main>
+  <body class="page">
+    <header class="header">
+      <nav class="nav">
+        <img src="./images/Terryavatar.svg" alt="V camp" class="nav__logo" />
+        <ul class="nav__links">
+          <li>
+            <a class="nav__link" href="#intro">About</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#career">Career</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#Hobbies">Hobbies</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#animal-shelter">Animal Shelter</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#footer">Contact Me</a>
+          </li>
+        </ul>
+        <button type="button" class="nav__menu-button"></button>
+      </nav>
+    </header>
+    <section class="popup__nav" id="nav-popup">
+      <ul class="popup__nav-list">
+        <li class="popup__nav-box">
+          <a class="popup__nav-link" href="#intro">About</a>
+        </li>
+        <li class="popup__nav-box">
+          <a class="popup__nav-link" href="#career">Career</a>
+        </li>
+        <li class="popup__nav-box">
+          <a class="popup__nav-link" href="#Hobbies">Hobbies</a>
+        </li>
+        <li class="popup__nav-box">
+          <a class="popup__nav-link" href="#animal-shelter">Animal Shelter</a>
+        </li>
+        <li class="popup__nav-box">
+          <a class="popup__nav-link" href="#footer">Contact Me</a>
+        </li>
+      </ul>
+    </section>
+    <main class="main">
+      <section class="banner" id="intro">
+        <div class="banner__text">
+          <h1 class="banner__title">Terrence Shlomo Tegegne</h1>
+          <p class="banner__subtitle">freelance UX designer</p>
+          <p class="banner__info">
+            Hey! you can call me Terry! I'm 28 years old, was raised in Boston
+            and I am on may way to become a master developer! check out my page
+            and see all the ways
+            <span class="banner_info-span"> I </span> can contribute to
+            <span class="banner_info-span"> your </span> company!
+          </p>
+        </div>
+        <img
+          src="./images/TerryBench.png"
+          class="banner__image"
+          alt="me on a bench"
+        />
+      </section>
+      <section class="career" id="career">
+        <h2 class="career__heading">I worked with:</h2>
+        <div class="career__companies">
+          <img
+            src="./images/google1.png"
+            class="career__companies-google"
+            alt="google"
+          />
+          <img
+            src="./images/spotify4.png"
+            class="career__companies-spotify"
+            alt="spotify"
+          />
+          <div class="career__companies-apple" alt="apple"></div>
+          <img
+            src="./images/Yandex.png"
+            class="career__companies-yandex"
+            alt="yandex"
+          />
+        </div>
+      </section>
+      <section class="cards">
+        <h2 class="cards__title">Hobbies</h2>
+        <div class="popup__overlay sci-fi close_sifi">
+          <div class="popup">
+            <button class="popup__close-button" id="close_sifi"></button>
+            <h3 class="popup__title">SCI-FI</h3>
+            <iframe
+              class="popup__frame"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/TcxOp0jnSVQ?controls=0&autoplay=1&mute=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <p class="popup__caption">
+              I really love science fiction and I would like to share that in
+              sci-fi is that Sci-fi gets people talking, It is so out of our day
+              to day life so the situations that can accrue is such movies can
+              be super bizarre to someone. Also sci-fi makes for great movies
+              like Star Wars and Star Trek
+            </p>
+          </div>
+        </div>
+        <div class="popup__overlay dragon-ball close_dragonball">
+          <div class="popup">
+            <button class="popup__close-button" id="close_dragonball"></button>
+            <h3 class="popup__title">Dragon Ball Z</h3>
+            <iframe
+              class="popup__frame"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/aLX6I-e5nrk?controls=0&autoplay=1&mute=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <p class="popup__caption">
+              I love to watch Dragon ball Z with my nephews & nieces after
+              school. the best episode for me was Episode 237: Final Atonement
+              where Trunks attacks Majin Buu, giving Vegeta some time to recover
+              from the onslaught of attacks. Meanwhile, Piccolo confronts Babadi
+              and slices him in half, leaving the wizard for dead.
+            </p>
+          </div>
+        </div>
+        <div class="popup__overlay dj close_dj">
+          <div class="popup">
+            <button class="popup__close-button" id="close_dj"></button>
+            <h3 class="popup__title">DJ</h3>
+            <iframe
+              class="popup__frame"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/V9H0F0pfLNM?controls=0&autoplay=1&mute=1"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <p class="popup__caption">
+              I was a DJ for a long time. mostly I was showing my work with my
+              friends and then a thing leading to another thing and I became a
+              very famous DJ in my location
+            </p>
+          </div>
+        </div>
+        <div class="cards__container"></div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="footer__content">
         <form class="footer__form form">
@@ -81,6 +234,14 @@
         />
       </div>
     </footer>
+    <template id="card-template">
+      <div class="card">
+        <h2 class="card__title"></h2>
+        <img class="card__image" src="" alt="" />
+        <button class="card__button">Expand</button>
+      </div>
+    </template>
     <script type="module" src="./scripts/index.js"></script>
+    <script type="module" src="./scripts/utils.js"></script>
   </body>
 </html>

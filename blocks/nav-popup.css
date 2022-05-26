@@ -1,12 +1,28 @@
+@keyframes show {
+  0% {
+    transform: translate(10px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(15px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(20px);
+    opacity: 1;
+  }
+}
+
 .popup__nav {
-  max-width: 100px;
+  position: fixed;
+  left: 85%;
+  top: auto;
+  max-width: 200px;
   justify-content: flex-end;
-  align-items: flex-end;
-  z-index: 5;
-  box-sizing: border-box;
-  border-bottom: 1px solid #000000;
-  /* transition: visibility 0.3s linear, opacity 0.3s linear; */
+  align-items: flex-start;
+  background: #000000;
   visibility: hidden;
+  z-index: 5;
   opacity: 0;
   display: none;
 }
@@ -16,13 +32,8 @@
   opacity: 1;
   display: flex;
   float: right;
+  animation: show 0.8s linear ease-in-out;
 }
-
-/* .popup_fadeout {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0.8s linear, opacity 0.8s linear;
-} */
 
 .popup__nav-list {
   display: flex;
@@ -33,13 +44,12 @@
 
 .popup__nav-box {
   box-sizing: border-box;
-  border-bottom: 1px solid #000000;
-  opacity: 0.5;
+  border-bottom: 1px solid #ffffff;
 }
 
 .popup__nav-link {
   margin: 0;
-  color: #000000;
+  color: #ffffff;
   font-family: "Ubuntu", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -51,4 +61,22 @@
 
 .popup__nav-link:hover {
   color: #0882ff;
+}
+
+@media screen and (max-width: 800px) {
+  .popup__nav {
+    left: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .popup__nav {
+    left: 75%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .popup__nav {
+    left: 60%;
+  }
 }

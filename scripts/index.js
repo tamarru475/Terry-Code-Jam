@@ -6,7 +6,7 @@ const cardData = [
   {
     id: "sci-fi",
     title: "Sci-Fi",
-    image: "../images/terry20items.png",
+    image: "https://tamarru475.github.io/images/terry20items.png/",
   },
   {
     id: "dragon-ball",

@@ -4,8 +4,7 @@
   align-items: flex-end;
   z-index: 5;
   box-sizing: border-box;
-  /* border-bottom: 1px solid #000000; */
-  transition: 0.5s linear;
+  transition: 0.5s;
   visibility: hidden;
   opacity: 0;
   right: 0;
@@ -16,12 +15,6 @@
   visibility: visible;
   opacity: 1;
 }
-
-/* .popup_fadeout {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0.8s linear, opacity 0.8s linear;
-} */
 
 .popup__nav-list {
   display: flex;

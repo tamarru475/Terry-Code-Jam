@@ -6,17 +6,17 @@ const cardData = [
   {
     id: "sci-fi",
     title: "Sci-Fi",
-    image: "../images/Terry20items.png",
+    image: "../images/terry20items.png",
   },
   {
     id: "dragon-ball",
     title: "Dragon Ball Z",
-    image: "../images/Terrysmile.png",
+    image: "../images/terrysmile.png",
   },
   {
     id: "dj",
     title: " DJ",
-    image: "../images/TerryBench.png",
+    image: "../images/terryBench.png",
   },
 ];
 const cardSection = document.querySelector(".cards__container");

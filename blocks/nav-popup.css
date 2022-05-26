@@ -1,26 +1,28 @@
 .popup__nav {
   max-width: 100px;
-  display: none;
-  visibility: hidden;
-  opacity: 0;
   justify-content: flex-end;
   align-items: flex-end;
   z-index: 5;
   box-sizing: border-box;
   border-bottom: 1px solid #000000;
+  /* transition: visibility 0.3s linear, opacity 0.3s linear; */
+  visibility: hidden;
+  opacity: 0;
+  display: none;
 }
 
 .popup_fadein {
   visibility: visible;
   opacity: 1;
-  transition: visibility 0.3s linear, opacity 0.3s linear;
+  display: flex;
+  float: right;
 }
 
-.popup_fadeout {
+/* .popup_fadeout {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0.8s linear, opacity 0.8s linear;
-}
+} */
 
 .popup__nav-list {
   display: flex;

@@ -49,4 +49,6 @@ const menuButton = document.querySelector(".nav__menu-button");
 
 /// Event Listeners ///
 
-menuButton.addEventListener("click", togglePopup(navPopup));
+menuButton.addEventListener("click", () => {
+  togglePopup(navPopup);
+});

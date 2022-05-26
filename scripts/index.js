@@ -6,7 +6,7 @@ const cardData = [
   {
     id: "sci-fi",
     title: "Sci-Fi",
-    image: "images/terry20items.png",
+    image: "images/aterry20items.png",
   },
   {
     id: "dragon-ball",
@@ -16,7 +16,7 @@ const cardData = [
   {
     id: "dj",
     title: " DJ",
-    image: "images/terryBench.png",
+    image: "images/aterryBench.png",
   },
 ];
 const cardSection = document.querySelector(".cards__container");

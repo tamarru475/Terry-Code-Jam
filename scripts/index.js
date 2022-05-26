@@ -11,7 +11,7 @@ const cardData = [
   {
     id: "dragon-ball",
     title: "Dragon Ball Z",
-    image: "images/terrysmile.png",
+    image: "images/aterrysmile.png",
   },
   {
     id: "dj",

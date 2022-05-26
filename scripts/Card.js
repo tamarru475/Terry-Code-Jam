@@ -32,6 +32,7 @@ class Card {
     this._cardButton.id = this._id;
     cardTitle.textContent = this._title;
     cardImage.src = this._image;
+    cardImage.alt = this._title;
     return this._card;
   }
 }
